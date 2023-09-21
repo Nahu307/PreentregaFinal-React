@@ -1,0 +1,41 @@
+.about{
+    min-height:80vh;
+    display:flex;
+    justify-content: center;
+}
+
+.aboutImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamPicture{
+    margin:40px;
+    max-height: 620px;
+    max-width: 430px;
+}
+
+.text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align:right;
+    padding:50px;
+} 
+
+@media screen and (max-width:767px){
+    .text{
+        align-items: center;
+        text-align:center;
+        font-size:small;
+        padding:30px;
+    } 
+    .teamPicture{
+        margin:10px;
+        padding:20px;
+        max-width: 360px;
+        justify-self: center;
+    }
+}

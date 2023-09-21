@@ -1,0 +1,75 @@
+.item{
+    display:grid;
+    grid-template-areas: 
+    "image"
+    "title"
+    "price"
+    "buttons";
+    margin:20px;
+    justify-items: center;
+    padding:20px 0px 20px 0px;
+    border-radius:10px;
+    background-color: white;
+    width:300px;
+}
+.title{
+    grid-area:title;
+    text-align: center;
+    font-weight: bold;
+    justify-self: center;
+    align-self: center;
+    height:50px;
+    display:flex;
+    align-items: center;
+}
+.imageContainer{
+    background-color: white;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    grid-area:image;
+    height:170px;
+    width:300px;
+    overflow-y:hidden;
+    overflow-x: visible;
+    border-bottom:solid 2px #ff8b2b;
+}
+.price{
+    grid-area:price;
+    font-weight: bold;
+    color:#ff8b2b;
+}
+.itemButtons{
+    grid-area:buttons;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+.itemButton:hover{
+    color: rgba(255, 139, 43,0.5);
+}
+.seeDetails{
+    height:min-content;
+    border:0.5px solid #ff8b2b;
+    margin-left:5px;
+}
+
+.image{
+    border-radius:10px;
+    max-width:160px;
+    max-height:160px;
+    transition: all 0.3s;
+}
+.image:hover{
+    transform: scale(1.2);overflow: hidden;
+}
+hr{
+    margin-bottom:0px;
+}
+
+.addToCart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

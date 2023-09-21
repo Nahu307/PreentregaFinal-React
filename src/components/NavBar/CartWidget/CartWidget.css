@@ -1,0 +1,10 @@
+.cartWidget:focus, .cartWidget:focus-visible{
+    box-shadow:none;
+} 
+.cartWidget{
+    position:relative;
+}
+.cartBadge{
+    position:absolute;
+    bottom:20px;
+}

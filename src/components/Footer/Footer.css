@@ -1,0 +1,49 @@
+.footer{
+    background-color: #e60012;
+    color:white;
+    max-width:100vw;
+}
+
+.footer .row{
+    margin-right: 0px !important;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+ul{
+    list-style-type: none;
+    margin-bottom: 0;
+}
+.socialMedia{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+li{
+    margin:10px;
+}
+.contactData{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contactData li, .contactData li svg, .contactData li p{
+    display:inline-block;
+}
+.textoFooter{
+    margin-bottom:0px;
+}
+.footerData{
+    display:inline-block;
+}
+
+@media screen and (max-width:767px){
+    .contactData{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
